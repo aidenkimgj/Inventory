@@ -1,0 +1,38 @@
+.create_container {
+    display: flex;
+    position: relative;
+    flex-direction: row;   
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 69vh;
+    text-align: center;
+    margin: auto;
+    top: 97px;
+    bottom: 150.433px;
+    
+}
+.create_intro i {
+    margin-top: 3%;
+    font-size: 30px;
+}
+
+
+.create_input_div p {
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: left;
+      
+}
+
+
+.create_input_div input {
+    border: none;
+    border-bottom: solid 1px $basic_color;
+    outline: none;
+    width: 280px;
+    padding: 4px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    background-color: $background_color;
+}

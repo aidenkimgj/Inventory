@@ -1,0 +1,92 @@
+.login_container {
+    position: relative;
+    display: flex;
+    flex-direction: row;   
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 69vh;
+    text-align: center;
+    margin: auto;
+    top: 97px;
+    bottom: 150.433px;
+}
+
+.login_intro i {
+    font-size: 30px;
+}
+.login_input_div p {
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: left;
+    margin-left: 0px;
+    a {
+        position: relative;
+        margin-left: 110px;
+        color: $link_color;
+        font-size: smaller;
+    }
+}
+#active_account {
+    margin-left: 92px;
+}
+
+.login_input_div input {
+    border: none;
+    border-bottom: solid 1px $basic_color;
+    outline: none;
+    width: 280px;
+    padding: 4px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    background-color: $background_color;
+}
+
+.submit_div {
+    margin-top: 20px;
+    
+    input {
+        width: 280px;
+        padding: 10px;
+        border-style: none;
+        border-radius: 5px;
+        font-size: 20px;
+        background-color: $button_color1;
+        color: $default-color;
+        cursor: pointer;
+        &:hover {
+            background-image: -webkit-gradient(
+                linear,
+                left top,
+                left bottom,
+                color-stop(0, #FFA41C),
+                color-stop(0.59, #FFD900),
+                color-stop(1, #FFA938)
+            );
+            background-image: -o-linear-gradient(bottom, #FFA41C 0%, #FFD900 59%, #FFA938 100%);
+            background-image: -moz-linear-gradient(bottom, #FFA41C 0%, #FFD900 59%, #FFA938 100%);
+            background-image: -webkit-linear-gradient(bottom, #FFA41C 0%, #FFD900 59%, #FFA938 100%);
+            background-image: -ms-linear-gradient(bottom, #FFA41C 0%, #FFD900 59%, #FFA938 100%);
+            background-image: linear-gradient(to bottom, #FFA41C 0%, #FFD900 59%, #FFA938 100%);
+        }
+    }
+}
+
+.create_account {
+    margin-top: 20px;
+    p {
+        font-size: smaller; 
+        a{
+            padding-left: 5px;
+            color: $link_color;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .login_container {
+        top: 54px;
+       
+    }
+}

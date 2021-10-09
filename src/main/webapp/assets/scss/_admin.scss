@@ -1,0 +1,131 @@
+.admin_container {
+    top: 97px;
+    position: relative;
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+    
+    .admin_title {
+        margin-top: 3vh;
+        font-size: 20px;
+        font-weight: bolder;
+        color: $link_color;
+    }
+    
+    .user_table {
+        margin-top: 3vh;
+        
+        table {
+            width: 50vw;
+            text-align: center;
+            
+            th {
+                background-color: $button_color1;
+                font-size: 18px;
+                font-weight: bolder;
+                border-style: none;
+                padding: 5px;
+            }
+            
+            td {
+                font-weight: lighter;
+                font-size: 15px;
+                padding: 5px;
+                color: black;
+            }
+            
+            tr:nth-child(odd) {
+            background-color: $table_color;
+            }
+        }
+    }
+    .category_table {
+        margin-top: 3vh;
+        
+        table {
+            width: 50vw;
+            text-align: center;
+            
+            th {
+                background-color: $button_color1;
+                font-size: 18px;
+                font-weight: bolder;
+                padding: 5px;
+            }
+            
+            td {
+                font-weight: lighter;
+                font-size: 15px;
+                padding: 5px;
+            }
+            
+            tr:nth-child(odd) {
+                background-color: $table_color;
+            }
+        }
+    }
+}
+
+
+
+.admin_header {
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.admin_menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;    
+    padding: 0;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.admin_menu li {
+    padding: 8px 12px; 
+    a {
+        color: #34d1af;
+    }
+}
+
+.admin_menu li a:hover {
+  color: #23a68a;
+  font-weight: bold;
+  
+}
+
+.user_form {
+    position: relative;
+    margin-top: 3vh;
+}
+
+.admin_input_div p {
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: left;
+      
+}
+
+.admin_input_div input {
+    border: none;
+    border-bottom: solid 1px $basic_color;
+    outline: none;
+    width: 280px;
+    padding: 4px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    background-color: $background_color;
+}
+
+.category_form {
+    position: relative;
+    margin-top: 3vh;
+    padding-bottom: 230px;
+}
+
+
+
+
+

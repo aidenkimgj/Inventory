@@ -1,0 +1,30 @@
+@import './variables';
+@import './navigation';
+@import './home';
+@import './footer';
+@import './login';
+@import './create-account';
+@import './reset';
+@import './admin';
+@import './inventory';
+@import './account';
+@import './password';
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: $background_color;
+}
+a {
+  text-decoration: none;
+  color: $default-color;
+}
