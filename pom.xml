@@ -11,10 +11,10 @@
 
     <repositories>
         <repository>
-        <id>local-repository</id> 
-        <name>local repository</name> 
-        <url>file://${project.basedir}/lib</url> 
-    </repository>
+            <id>local-repository</id> 
+            <name>local repository</name> 
+            <url>file://${project.basedir}/lib</url> 
+        </repository>
     
     </repositories>    
   
@@ -22,10 +22,20 @@
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-   
-
-    
+       
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.26</version>
+</dependency>
+
+        <dependency>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>eclipselink</artifactId>
+            <version>2.5.2</version>
+        </dependency>
         <dependency>
             <groupId>org.eclipse.persistence</groupId>
             <artifactId>org.eclipse.persistence.jpa.modelgen.processor</artifactId>
@@ -46,44 +56,11 @@
         </dependency>
         
         <!-- https://mvnrepository.com/artifact/jstl/jstl -->
-<dependency>
-    <groupId>jstl</groupId>
-    <artifactId>jstl</artifactId>
-    <version>1.2</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-<dependency>
-    <groupId>mysql</groupId>
-    <artifactId>mysql-connector-java</artifactId>
-    <version>5.1.23</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api -->
-<dependency>
-    <groupId>org.hibernate.javax.persistence</groupId>
-    <artifactId>hibernate-jpa-2.1-api</artifactId>
-    <version>1.0.2.Final</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/org.eclipse.persistence/org.eclipse.persistence.jpa -->
-<dependency>
-    <groupId>org.eclipse.persistence</groupId>
-    <artifactId>org.eclipse.persistence.jpa</artifactId>
-    <version>2.5.2</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api -->
-<dependency>
-    <groupId>javax.persistence</groupId>
-    <artifactId>javax.persistence-api</artifactId>
-    <version>2.2</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/org.eclipse.persistence/eclipselink -->
-<dependency>
-    <groupId>org.eclipse.persistence</groupId>
-    <artifactId>eclipselink</artifactId>
-    <version>2.5.2</version>
-</dependency>
-
-
-
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
     </dependencies>
 
     <build>
