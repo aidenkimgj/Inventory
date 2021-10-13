@@ -41,7 +41,7 @@
             </nav>
         </header>
         <div class="home_container">
-            <h1>Would you want to create inventory?</h1>
+            <h1>Would you want to create inventory????</h1>
             <a href="login">Go to Inventory</a>
         </div>
         <footer>
